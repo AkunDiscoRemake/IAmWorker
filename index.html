@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="description" content="I AM WORKER — simulador de profissões em VR (WebXR) feito para o Oculus Go.">
+<title>I AM WORKER</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<canvas id="c"></canvas>
+<div id="cross"></div>
+<div id="tip"></div>
+<div id="overlay">
+  <div class="card">
+    <h1>I AM <span>WORKER</span></h1>
+    <p class="sub">Agência Pega no Batente — seis profissões, um robô tagarela e nenhum crachá perdido.</p>
+    <div class="btns">
+      <button id="btn-vr" disabled>Verificando VR…</button>
+      <button id="btn-desk">Jogar no navegador</button>
+    </div>
+    <div class="cols">
+      <div>
+        <h2>Oculus Go</h2>
+        <ul>
+          <li><b>Gatilho (segurar)</b>: andar para onde o controle aponta</li>
+          <li><b>Touchpad (clicar e segurar)</b>: pegar e carregar</li>
+          <li><b>Soltar o touchpad</b>: largar / encaixar</li>
+          <li><b>Clique do touchpad</b> em máquinas e botões: usar</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Computador</h2>
+        <ul>
+          <li><b>Mouse</b>: olhar (clique na tela para travar)</li>
+          <li><b>W A S D</b> ou <b>botão direito</b>: andar</li>
+          <li><b>Botão esquerdo (segurar)</b>: pegar / soltar / clicar</li>
+          <li><b>Setas</b>: olhar sem mouse · <b>E</b>: pegar</li>
+        </ul>
+      </div>
+    </div>
+    <p id="status"></p>
+  </div>
+</div>
+<script type="module" src="src/main.js"></script>
+<script nomodule>
+  document.getElementById('status').textContent = 'Este navegador é antigo demais (sem módulos ES). Atualize o Oculus Browser.';
+</script>
+</body>
+</html>

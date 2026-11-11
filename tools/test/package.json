@@ -1,0 +1,14 @@
+{
+  "name": "iamworker-tests",
+  "private": true,
+  "description": "Testes automatizados (Playwright + emulador WebXR IWER). Sirva a raiz do projeto em http://localhost:8765 antes de rodar.",
+  "scripts": {
+    "jobs": "node run.js jobs.js",
+    "hub": "node run.js hub.js",
+    "xr": "node xr.js"
+  },
+  "devDependencies": {
+    "iwer": "*",
+    "playwright": "*"
+  }
+}
